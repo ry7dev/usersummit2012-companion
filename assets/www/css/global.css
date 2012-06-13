@@ -9,4 +9,7 @@ body
 .hdr
 {
 	color:#fff;
+	font-family:Georgia,serif;
+	font-size:14px;
+	margin:20px 0 0 50px;
 }
