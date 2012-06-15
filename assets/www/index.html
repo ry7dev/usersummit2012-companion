@@ -1,17 +1,32 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Cordova</title>
-<script type="text/javascript" charset="utf-8" src="cordova-1.8.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/cordova-1.8.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jmobi.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jmobi.css" />
 <link rel="stylesheet" type="text/css" href="css/global.css" />
 <script type="text/javascript">
-window.load = function(){
-	alert('UserSummit 2012');
-}
+	var pictureSource;
+	var destinationType;
+	
+	document.addEventListener("deviceready",onDeviceReady,false);
+	
+	function onDeviceReady()
+	{
+		alert(pictureSource);
+		pictureSource = navigator.camera.PictureSourceType;
+		destinationType = navigator.camera.DestinationType;
+	}
+	
 </script>
 
 </head>
 <body>
-<h1 class="hdr">2012 UserSummit</h1>
+<div data-role="header" data-position="inline">
+	<a href="/" data-icon="home"></a>
+	<h1 class="hdr">2012 UserSummit</h1>	
+</div>
+
+
 </body>
 </html>

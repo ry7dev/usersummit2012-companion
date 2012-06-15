@@ -4,12 +4,24 @@
 }
 body
 {
-	background-color:#000;
+	background-color:#ccc;
 }
 .hdr
 {
-	color:#fff;
+	color:#ffffff;
 	font-family:Georgia,serif;
-	font-size:14px;
-	margin:20px 0 0 50px;
+	font-size:21px;
+	text-align:center;
+	text-shadow:0 1px 0 #000;
+	width:320px;
+	display:block;
+	margin:0 auto;
+}
+.header
+{
+	width:100%;
+	clear:both;
+	height:27px;
+	padding-top:10px;
+	background-color:#000;
 }
