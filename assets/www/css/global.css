@@ -4,7 +4,7 @@
 }
 body
 {
-	background-color:#ccc;
+	background:url('../images/matte.png') no-repeat 0 0 #000;
 }
 .hdr
 {
